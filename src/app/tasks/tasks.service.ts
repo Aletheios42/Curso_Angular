@@ -30,7 +30,7 @@ export class TasksService {
   ];
 
   constructor() {
-    const tasks = localStorage.getItem('task');
+    const tasks = localStorage.getItem('tasks');
     if (tasks) {
       this.tasks = JSON.parse(tasks);
     }
